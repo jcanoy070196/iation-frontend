@@ -1,0 +1,25 @@
+
+
+
+
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+  <h5 class="my-0 pr-5 font-weight-normal">Iation Project</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" href="/home">Home</a>
+    <a class="p-2 text-dark" href="/car" *ngIf="storageService.token()">Car</a>
+    <a class="p-2 text-dark" href="/manufacturer" *ngIf="storageService.token()">Manufacturer</a>
+    <a class="p-2 text-dark" href="/car-model" *ngIf="storageService.token()">Model</a>
+    <a class="p-2 text-dark" href="/color" *ngIf="storageService.token()">Color</a>
+   
+  </nav>
+</div>
+
+
+<div class="container">
+
+  <router-outlet></router-outlet>
+
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+   
+  </footer>
+</div>
